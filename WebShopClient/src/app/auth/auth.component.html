@@ -1,1 +1,52 @@
-<p>auth works!</p>
+<main>
+  <section>
+    <h1>Create New Account</h1>
+    <form action="http://localhost:3000/signup" method="POST">
+      <p>
+        <label for="user-email">Email</label>
+        <input type="email" id="user-email" name="useremail" required />
+      </p>
+      <p>
+        <label for="confirm-email">Confirm Email</label>
+        <input type="email" id="confirm-email" name="confirmemail" required />
+      </p>
+      <p>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          minlength="6"
+        />
+      </p>
+      <hr />
+      <p>
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" name="fullname" required />
+      </p>
+      <p>
+        <label for="street">Street</label>
+        <input type="text" id="street" name="street" required />
+      </p>
+      <p>
+        <label for="postal-code">Postal Code</label>
+        <input
+          type="text"
+          id="postal-code"
+          name="postalcode"
+          required
+          minlength="6"
+          maxlength="6"
+        />
+      </p>
+      <p>
+        <label for="city">City</label>
+        <input type="text" id="city" name="city" required />
+      </p>
+      <button class="btn">Create Account</button>
+      <p id="switch-form"><a href="">Login instead</a></p>
+    </form>
+  </section>
+  <section></section>
+</main>
